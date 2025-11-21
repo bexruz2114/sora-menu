@@ -1,0 +1,84 @@
+/* GLOBAL RESET */
+.cold-info {
+padding: 15px;
+text-align: center;
+}
+
+
+.drink-name,
+.tea-name,
+.coffee-name,
+.cold-name {
+font-size: 1.2rem;
+font-weight: 600;
+margin-bottom: 6px;
+color: #4a2d1f;
+}
+
+
+.drink-price,
+.tea-price,
+.coffee-price,
+.cold-price {
+color: #d49b4a;
+font-weight: 700;
+font-size: 1rem;
+}
+
+
+/* DRINKS SPECIAL STYLES */
+.drink-card { border: 1px solid #c7ffdd; }
+.drink-img-wrapper { background: #dfffe8; }
+.drink-price { color: #1ea35a; }
+.drink-name { color: #11663b; }
+
+
+/* TEA SPECIAL */
+.tea-card { border: 1px solid #ffe3b3; }
+.tea-img-wrapper { background: #fff4dd; }
+.tea-price { color: #e49a00; }
+.tea-name { color: #9a6200; }
+
+
+/* COFFEE SPECIAL */
+.coffee-card { border: 1px solid #d2b49c; }
+.coffee-img-wrapper { background: #f3e8dd; }
+.coffee-price { color: #6b4f33; }
+.coffee-name { color: #4b3621; }
+
+
+/* COLD DRINK SPECIAL */
+.cold-card { border: 1px solid #b6e5ff; }
+.cold-img-wrapper { background: #e4f7ff; }
+.cold-price { color: #0077b6; }
+.cold-name { color: #005b8a; }
+
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+.card-container {
+grid-template-columns: repeat(2,1fr);
+}
+}
+
+
+@media (max-width: 600px) {
+.card-container {
+grid-template-columns: 1fr;
+}
+.page-title { font-size: 1.8rem; }
+}
+
+
+/* ANIMATION */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+.drink-img-wrapper,
+.tea-img-wrapper,
+.coffee-img-wrapper,
+.cold-img-wrapper {
+  height: auto;
+  max-height: 260px;
+}

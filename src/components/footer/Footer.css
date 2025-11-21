@@ -1,0 +1,92 @@
+/* ==== Footer General ==== */
+.footer {
+  background-color: #c9f5d3; /* Oqroqqa yaqin sora-yashil fon */
+  padding: 2.5rem 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1a1a1a; /* Matn qora */
+}
+
+/* ==== Footer Container ==== */
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ==== Title ==== */
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #056f2b;
+  transition: all 0.4s ease;
+}
+
+.footer-title:hover {
+  transform: scale(1.05);
+  color: #00a651; /* Yanada chuqurroq yashil */
+}
+
+/* ==== Icons ==== */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.icon-link {
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Instagram — o‘z rangida */
+.icon-link.instagram {
+  color: #e1306c;
+}
+
+.icon-link.instagram:hover {
+  color: #fd1d1d;
+  transform: translateY(-3px) scale(1.15);
+}
+
+/* Telegram — o‘z rangida */
+.icon-link.telegram {
+  color: #0088cc;
+}
+
+.icon-link.telegram:hover {
+  color: #00bfff;
+  transform: translateY(-3px) scale(1.15);
+}
+
+/* ==== Phone ==== */
+.footer-phone {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: #056f2b;
+  font-size: 1rem;
+}
+
+/* ==== Text ==== */
+.footer-text {
+  font-size: 0.9rem;
+  color: #333;
+  opacity: 0.9;
+  margin-top: 0.3rem;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .icon-link {
+    font-size: 1.6rem;
+  }
+}
